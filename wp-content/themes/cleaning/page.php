@@ -1,12 +1,13 @@
 <?php wp_get_header(); ?>
+			<?php get_sidebar('top'); ?>
+
 <div class="art-content-layout">
     <div class="art-content-layout-row">
 		<div class="art-layout-cell art-sidebar1">
           <?php get_sidebar('default'); ?>
           <div class="cleared"></div>
         </div>
-        <div class="art-layout-cell art-content">
-			<?php get_sidebar('top'); ?>
+                <div class="art-layout-cell art-content">
 			<?php 
 				if(have_posts()) {
 					
@@ -25,7 +26,7 @@
 		    ?>
 			<?php get_sidebar('bottom'); ?>
           <div class="cleared"></div>
-        </div>        
+        </div>
     </div>
 </div>
 <div class="cleared"></div>

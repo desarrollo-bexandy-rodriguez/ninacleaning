@@ -42,9 +42,14 @@ wp_head(); ?>
             </div>
             <div class="cleared reset-box"></div>
             <div class="art-header">
+<?php 
+    echo do_shortcode("[metaslider id=140]"); 
+?>
                 <div class="art-logo">
                 <?php if(theme_get_option('theme_header_show_headline')): ?>
+
                 <h1 class="art-logo-name"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+
                 <?php endif; ?>
                 <?php if(theme_get_option('theme_header_show_slogan')): ?>
                     <h2 class="art-logo-text"><?php bloginfo('description'); ?></h2>
